@@ -12,7 +12,7 @@
                     <a href="{{ $menu->children->isEmpty() ? $menu->url : '#' }}"
                     @click.prevent="open = !open"
                     class="flex items-center justify-between px-3 py-2 rounded-lg transition 
-                            {{ request()->is(ltrim($menu->url, '/')) ? 'bg-blue-100 text-blue-600 font-semibold' : 'text-gray-700 hover:bg-gray-100' }}">
+                            {{ request()->is(ltrim($menu->url, '/')) ? 'bg-blue-100     -blue-600 font-semibold' : 'text-gray-700 hover:bg-gray-100' }}">
                         <div class="flex items-center gap-3">
                             <i class="{{ $menu->icon ?? 'bi bi-circle' }} text-gray-800"></i>
                             <span>{{ $menu->name }}</span>
